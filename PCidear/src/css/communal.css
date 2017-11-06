@@ -1,0 +1,39 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none; }
+
+.header {
+  width: 100%;
+  height: 52px;
+  background: #DDDDDD; }
+  .header .header-box {
+    width: 980px;
+    margin: 0 auto; }
+    .header .header-box .header-img-left {
+      margin-left: 10px; }
+    .header .header-box .header-img-right {
+      float: right;
+      margin-right: 40px; }
+    .header .header-box img {
+      margin-top: 10px; }
+
+/* 按钮 */
+.btn-blue {
+  text-align: center; }
+  .btn-blue a {
+    display: inline-block;
+    line-height: 24px;
+    height: 24px;
+    width: 188px;
+    background: #00A1B2;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff !important;
+    text-overflow: ellipsis;
+    border: none;
+    outline: none; }
+    .btn-blue a:active {
+      background: #0a8d9b; }

@@ -1,0 +1,22 @@
+*{padding: 0;margin: 0;text-decoration: none;list-style: none;}
+.header{
+    width: 100%;
+    height: 52px;
+    background: #DDDDDD;
+    .header-box{
+        width: 980px;
+        margin: 0 auto;
+        //line-height: 72px;
+        .header-img-left{
+            margin-left: 10px;
+        }
+        .header-img-right{
+            float: right;
+            margin-right: 40px;
+        }
+        //图标logo
+        img{
+            margin-top: 10px;
+        }
+    }
+}

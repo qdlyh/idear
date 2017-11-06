@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* 商城个人购物信息页面 */
+.shopping .shopping-msg {
+  max-width: 980px;
+  margin: 0 auto; }
+  .shopping .shopping-msg .top-img img {
+    width: 100%; }
+  .shopping .shopping-msg .message-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .shopping .shopping-msg .message-left .msg-left-top {
+      width: 240px;
+      height: 240px;
+      border: 1px solid #c9caca;
+      border-radius: 5px; }
+      .shopping .shopping-msg .message-left .msg-left-top h4 {
+        text-align: center;
+        font-weight: 900;
+        font-size: 24px;
+        color: #595757;
+        margin-bottom: 41px; }
+      .shopping .shopping-msg .message-left .msg-left-top p {
+        padding-left: 25px;
+        color: #595757;
+        margin: 17px 0; }
+      .shopping .shopping-msg .message-left .msg-left-top .indent {
+        color: #00a1b2;
+        font-size: 14px;
+        padding-left: 25px; }
+      .shopping .shopping-msg .message-left .msg-left-top .shopping-btn {
+        margin-top: 30px; }
+    .shopping .shopping-msg .message-left .msg-left-nav {
+      width: 240px;
+      height: 272px;
+      border: 1px solid #c9caca;
+      border-radius: 4px;
+      background: #fff;
+      margin-top: 20px; }
+      .shopping .shopping-msg .message-left .msg-left-nav ul {
+        margin-top: 20px; }
+        .shopping .shopping-msg .message-left .msg-left-nav ul .nav-border {
+          border-top: 0; }
+        .shopping .shopping-msg .message-left .msg-left-nav ul li {
+          height: 36px;
+          border-top: 1px solid #c9caca;
+          line-height: 36px;
+          padding-left: 10px; }
+          .shopping .shopping-msg .message-left .msg-left-nav ul li a {
+            color: #595757; }
+            .shopping .shopping-msg .message-left .msg-left-nav ul li a span {
+              float: right;
+              display: inline-block;
+              padding-right: 10px;
+              height: 36px;
+              line-height: 36px; }
+  .shopping .shopping-msg .message-right {
+    display: flex;
+    justify-content: flex-end; }
