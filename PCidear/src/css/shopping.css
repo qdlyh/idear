@@ -2,7 +2,10 @@
 /* 商城个人购物信息页面 */
 .shopping .shopping-msg {
   max-width: 980px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between; }
   .shopping .shopping-msg .top-img img {
     width: 100%; }
   .shopping .shopping-msg .message-left {
@@ -19,12 +22,12 @@
         font-weight: 900;
         font-size: 24px;
         color: #595757;
-        margin-bottom: 41px; }
+        margin: 20px 0; }
       .shopping .shopping-msg .message-left .msg-left-top p {
         padding-left: 25px;
         color: #595757;
         margin: 17px 0; }
-      .shopping .shopping-msg .message-left .msg-left-top .indent {
+      .shopping .shopping-msg .message-left .msg-left-top .integral {
         color: #00a1b2;
         font-size: 14px;
         padding-left: 25px; }
@@ -48,6 +51,8 @@
           padding-left: 10px; }
           .shopping .shopping-msg .message-left .msg-left-nav ul li a {
             color: #595757; }
+            .shopping .shopping-msg .message-left .msg-left-nav ul li a:active {
+              color: #00a1b2; }
             .shopping .shopping-msg .message-left .msg-left-nav ul li a span {
               float: right;
               display: inline-block;
@@ -55,5 +60,13 @@
               height: 36px;
               line-height: 36px; }
   .shopping .shopping-msg .message-right {
-    display: flex;
-    justify-content: flex-end; }
+    margin-left: 20px;
+    display: block; }
+    .shopping .shopping-msg .message-right .hr {
+      width: 700px;
+      height: 1px;
+      background: #9FA0A0; }
+    .shopping .shopping-msg .message-right .message-text {
+      font-size: 24px;
+      color: #595757;
+      margin-bottom: 10px; }

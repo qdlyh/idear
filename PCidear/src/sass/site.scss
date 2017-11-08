@@ -1,0 +1,166 @@
+.add-Site {
+    display: flex;
+    justify-content: space-between;
+    a {
+        margin-top: 10px;
+        color: #00a1b2;
+    }
+}
+
+.site-box {
+    margin-top: 20px;
+    /* 编辑收货地址 */
+    .compile-form {
+        #form {
+            span {
+                color: #595757;
+            }
+            input {
+                width: 550px; // height: 48px;
+                margin-top: 20px;
+                padding: 10px 0;
+            }
+            .province{
+                margin-top: 20px;
+                select{
+                    width: 173px;
+                    height: 30px;
+                    margin-right: 10px;
+                }
+            }
+            .site-textarea {
+                display: flex;
+                align-items: center;
+                textarea {
+                    width: 550px;
+                    height: 150px;
+                    margin-top: 20px;
+                }
+            } //让个别input右对齐
+            .right-input {
+                margin-right: 15px;
+            }
+        }
+        .site-btn {
+            margin-top: 80px; //position: relative;
+            a {
+                // position: absolute;
+                // top: 80px;
+                // left: 150px;
+                width: 360px;
+                height: 36px;
+                line-height: 36px;
+            }
+        }
+    }
+    /* 保存后收货地址样式 */
+    .my-site {
+        .my-site-box {
+            border: 2px solid #9FA0A0;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-bottom: 10px;
+            .my-site-text-right{
+                padding-right: 30px;
+            }
+            .delete-id{
+                display: none;
+            }
+            ul {
+                .middle {
+                    margin: 10px 0;
+                    cursor: pointer;
+                } //右边蓝色字体
+                .blue-color {
+                    cursor: pointer;
+                    color: #00a1b2;
+                }
+                .delete-site {
+                    cursor: pointer;
+                    color: #e64545;
+                }
+                li {
+                    color: #454545;
+                }
+            }
+        }
+    }
+    /* 选中后的勾 */
+    .active{
+        position: relative;
+        border: 2px solid #00A1B2 !important;
+        &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-bottom: 40px solid #00A1B2;
+            border-left: 40px solid transparent;
+        }
+        &::after{
+            content: "\2713";
+            font-size: 20px;
+            color: #fff;
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+        }
+        .active-color{
+            color: #454545 !important;
+        }
+    }
+}
+
+.site-checkbox {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0 0 80px;
+    label {
+        margin-right: 5px;
+    }
+    span {
+        color: #A8A8A8 !important;
+        font-size: 12px;
+    }
+}
+
+.site-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.site-checkbox input[type="checkbox"]+i {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: #b4b4b4 1px solid;
+    border-radius: 5px;
+    &::after {
+        border: 2px solid transparent;
+        border-left: 0;
+        border-top: 0;
+        content: " ";
+        top: 0px;
+        left: 5px;
+        position: absolute;
+        width: 4px;
+        height: 10px;
+        transform: rotate(45deg) scale(0);
+        transition: transform .2s;
+    }
+}
+
+.site-checkbox input[type="checkbox"]:checked+i {
+    background: #57cd33;
+    border: #fff 1px solid;
+    transition: .2s;
+    -webkit-transition: .2s;
+    &::after {
+        content: " ";
+        border-color: #fff;
+        transform: rotate(45deg) scale(1);
+    }
+}

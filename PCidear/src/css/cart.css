@@ -1,0 +1,13 @@
+.cart-box {
+  margin-top: 20px; }
+  .cart-box .cart-text {
+    text-align: center; }
+    .cart-box .cart-text p {
+      margin: 47px 0 75px 0;
+      font-size: 24px;
+      color: #595757; }
+    .cart-box .cart-text a {
+      color: #00a1b2;
+      font-size: 18px; }
+      .cart-box .cart-text a span {
+        font-size: 14px; }

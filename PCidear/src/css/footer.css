@@ -2,7 +2,8 @@
   width: 100%;
   background: #f3f3f3;
   position: relative;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin-top: 80px; }
   .footer .footer-title-box {
     width: 980px;
     margin: 0 auto;

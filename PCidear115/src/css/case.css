@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* 案例展示多页面公共样式 */
+#caseText {
+  max-width: 780px; }
+
+.top-img img {
+  width: 100%; }
+
+.case-box {
+  max-width: 980px;
+  margin: 20px auto;
+  margin-bottom: 100px; }
+  .case-box .text {
+    width: 70px;
+    color: #00A1B2;
+    border-bottom: 1px solid #00A1B2;
+    padding-bottom: 5px; }
+  .case-box .text1 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #00A1B2;
+    text-align: center; }
+  .case-box .case-content {
+    margin: 0 auto;
+    /************** 多页面公共样式结束*********************************** */ }
+    .case-box .case-content .case-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between; }
+    .case-box .case-content .list {
+      width: 320px;
+      height: 384px;
+      border: 1px solid #cdcdcd;
+      border-radius: 5px;
+      margin: 5px 0;
+      color: #595757;
+      font-size: 16px; }
+    .case-box .case-content .list-active {
+      margin: 5px; }
+    .case-box .case-content p {
+      padding: 10px 0 0 10px; }
+    .case-box .case-content .list-text {
+      color: #9fa0a0;
+      font-size: 16px; }
+    .case-box .case-content .case-text p {
+      font-size: 14px;
+      color: #595757; }
+    .case-box .case-content .case-text img {
+      margin-top: 20px;
+      width: 100%; }
+    .case-box .case-content .case-text-bottom {
+      margin-top: 20px; }
+      .case-box .case-content .case-text-bottom p {
+        font-size: 14px;
+        color: #595757; }
+      .case-box .case-content .case-text-bottom .case-msg-img {
+        margin: 0 auto; }
+        .case-box .case-content .case-text-bottom .case-msg-img img {
+          margin-top: 18px;
+          width: 780px; }
+      .case-box .case-content .case-text-bottom .case-text-left {
+        float: left; }
+      .case-box .case-content .case-text-bottom .case-text-right {
+        float: right;
+        margin-right: 40%; }

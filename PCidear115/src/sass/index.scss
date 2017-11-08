@@ -1,0 +1,67 @@
+.swiper-container {
+    height: 667px;
+    min-width: 980px;
+    .swiper-slide {
+        background-size: cover;
+        overflow: hidden;
+        background-position: center;
+        height: 667px;
+        min-width: 980px;
+        img {
+            height: 667px;
+            width: 100%;
+        }
+    } //分页器
+    .swiper-pagination {
+        bottom: 50px;
+    } //分页器选中
+    .swiper-pagination-bullet-active {
+        width: 48px;
+        height: 2px;
+        background: #1399a8 !important;
+    } //分页器没选
+    .swiper-pagination-bullet {
+        width: 48px;
+        height: 2px;
+        border-radius: 0%;
+        opacity: 10;
+        background: #fff;
+    }
+}
+
+.content-list {
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background: #ddd;
+    .list-box {
+        width: 233px;
+        height: 360px;
+        text-align: center;
+        float: left;
+        background: #fff;
+        margin: 0 7px 7px 0px;
+        border: 1px #cdcdcd solid;
+        .list-text {
+            color: #9c9c9c;
+            font-size: 18px;
+            margin: 20px 0 10px;
+            font-family: "AriaIMT","Microsoft YaHei";
+        }
+        .list-text2{
+            color: #454545;
+            font-size: 14px;
+        }
+    }
+    //列表上下左边第一个
+    .list-one {
+        margin:0 7px 0 10px;
+    }
+    //底部转跳图片
+    .content-bottom{
+        margin: 20px 0 40px;
+    }
+}

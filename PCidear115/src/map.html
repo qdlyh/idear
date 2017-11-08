@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=980, user-scalable=no, target-densitydpi=device-dpi">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/communal.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/map.css">
+    <title>体验馆</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-box">
+                <span class="header-img-left"><img src="images/logo.png" alt=""></span>
+                <span class="header-img-right"><img src="images/151561561.png" alt=""></span>
+            </div>
+        </div>
+        <div class="top-img">
+            <img src="images/545451.png" alt="">
+        </div>
+        <div class="map-content">
+            <div class="map-text">
+                <p>体验馆</p>
+                <h4>体验馆</h4>
+            </div>
+            <div class="map-box">
+                <div id="mapbox" style="height:600px"></div>
+            </div>
+        </div>
+        <div class="seek-idear">
+            <p>查找地尔水疗马桶体验馆</p>
+            <hr/>
+            <div class="article-start-box">
+                <span class="categery">分类栏目</span>
+            </div>
+            <div class="seek-city">
+                <p>店铺地址查询</p>
+
+                <select><option id="optionValue">请输入省</option><option>河北</option><option>山西</option><option>内蒙古</option><option>辽宁</option><option>吉林</option><option>黑龙江</option><option>上海</option><option>江苏</option><option>浙江</option><option>安徽</option><option>福建</option><option>江西</option><option>山东</option><option>河南</option><option>湖北</option><option>湖南</option><option>广东</option><option>广西</option><option>海南</option><option>重庆</option><option>四川</option><option>贵州</option><option>云南</option><option>西藏</option><option>陕西</option><option>甘肃</option><option>青海</option><option>宁夏</option><option>新疆</option><option>台湾</option><option>澳门</option><option>香港</option><option>钓鱼岛</option></select>
+
+            </div>
+            <div class="seek-keywords">
+                <p>关键字查询</p>
+                <input type="text" placeholder="输入经销商地址或店铺名称等关键字">
+                <i class="seek-btn"></i>
+                <div class="keywords-box">
+                    <div class="keywords-text">
+                        <p>地尔水疗马桶授权门店查询结果</p>
+                    </div>
+                    <div class="keywords-content">
+                        <div class="keywords-content-box">
+                            <p>太原市体验店</p>
+                            <p>地址：山西省xxxxxxxxx</p>
+                            <p>电话：张三&nbsp;130303030</p>
+                            <p>业务员：李四&nbsp;130303030</p>
+                            <a href="JavaScript:;" class="keywords-map"><img src="images/123123123.png" alt="">&nbsp;查看地图</a>
+                            <hr/>
+                        </div>
+                        <div class="keywords-content-box">
+                            <p>太原市体验店</p>
+                            <p>地址：山西省xxxxxxxxx</p>
+                            <p>电话：张三&nbsp;130303030</p>
+                            <p>业务员：李四&nbsp;130303030</p>
+                            <a href="JavaScript:;" class="keywords-map"><img src="images/123123123.png" alt="">&nbsp;查看地图</a>
+                            <hr/>
+                        </div>
+                        <div class="keywords-content-box">
+                            <p>太原市体验店</p>
+                            <p>地址：山西省xxxxxxxxx</p>
+                            <p>电话：张三&nbsp;130303030</p>
+                            <p>业务员：李四&nbsp;130303030</p>
+                            <a href="JavaScript:;" class="keywords-map"><img src="images/123123123.png" alt="">&nbsp;查看地图</a>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script>
+    //路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+    // 使用
+    require(['echarts', 'echarts/chart/map'], function (ch) {
+        // 基于准备好的dom，初始化echarts图表
+        var myChart = ch.init(document.getElementById('mapbox'));
+        option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: '{b}'
+            },
+
+            series: [{
+                name: '中国',
+                type: 'map',
+                mapType: 'china',
+                selectedMode: 'single',
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: true
+                        }, //是否显示字
+                        //borderColor: '#009fb1', //省界限色
+                        areaStyle: {
+                            color: '#CCDFE4'
+                        }, //背景色
+                    },
+
+                    emphasis: {
+                        label: {
+                            show: true,
+                            textStyle: {
+                                color: '#fff'
+                            } //鼠标覆盖文字颜色
+                        },
+                        areaStyle: {
+                            color: '#009FB1'
+                        }, //鼠标覆盖色
+                    }
+                },
+
+                data: [{
+                    name: '广东',
+                    selected: false
+                } //初始选择
+                ]
+            }]
+        };
+        var ecConfig = require('echarts/config');
+        myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param) {
+            var selected = param.selected;
+            //var str = '当前选择： ';
+            var str ='';
+            for (var p in selected) {
+                if (selected[p]) {
+                    str += p + ' ';
+                }
+            }
+            document.getElementById('optionValue').innerHTML = str;
+            console.log(str)
+            
+        })
+        // 为echarts对象加载数据 
+        myChart.setOption(option);
+    });
+
+</script>
+<!-- 代码部分end -->
+
+</html>

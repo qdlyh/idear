@@ -1,0 +1,32 @@
+.datum-box {
+    margin-top: 56px;
+    color: #595757;
+    .phone-box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 36px;
+        a{
+            color: #00a1b2;
+            font-size: 14px;
+        }
+    }
+    #form {
+        input {
+            width: 620px;
+            height: 48px;
+            &::-webkit-input-placeholder {
+                font-size: 14px;
+                color: #bdbcbc;
+                padding-left: 15px;
+            }
+        }
+    }
+    .datum-btn {
+        margin-top: 60px;
+        a {
+            width: 360px;
+            height: 36px;
+            line-height: 36px;
+        }
+    }
+}

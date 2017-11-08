@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.integral-box {
+  margin-top: 20px; }
+  .integral-box .integral-text ul {
+    background: #cccccc; }
+    .integral-box .integral-text ul li {
+      width: 230px;
+      height: 36px;
+      display: inline-block;
+      line-height: 36px;
+      text-align: center;
+      background: #cccccc; }
+  .integral-box .integral-content {
+    margin-top: 20px; }
+    .integral-box .integral-content .integral-list ul {
+      background: #fafafa; }
+      .integral-box .integral-content .integral-list ul li {
+        width: 230px;
+        height: 40px;
+        display: inline-block;
+        line-height: 40px;
+        text-align: center;
+        background: #fafafa;
+        color: #454545; }
+    .integral-box .integral-content .integral-lists ul {
+      background: #cccccc; }
+      .integral-box .integral-content .integral-lists ul li {
+        width: 230px;
+        height: 40px;
+        display: inline-block;
+        line-height: 40px;
+        text-align: center;
+        background: #cccccc;
+        color: #454545; }
+
+/* 积分颜色 */
+.integral-number {
+  color: #00a1b2 !important; }
