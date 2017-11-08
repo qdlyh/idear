@@ -44,8 +44,13 @@
             </div>
             <div class="seek-city">
                 <p>店铺地址查询</p>
+                <span id="optionValue" class="open-ul">-选择省份-</span>
 
-                <select><option id="optionValue">请输入省</option><option>河北</option><option>山西</option><option>内蒙古</option><option>辽宁</option><option>吉林</option><option>黑龙江</option><option>上海</option><option>江苏</option><option>浙江</option><option>安徽</option><option>福建</option><option>江西</option><option>山东</option><option>河南</option><option>湖北</option><option>湖南</option><option>广东</option><option>广西</option><option>海南</option><option>重庆</option><option>四川</option><option>贵州</option><option>云南</option><option>西藏</option><option>陕西</option><option>甘肃</option><option>青海</option><option>宁夏</option><option>新疆</option><option>台湾</option><option>澳门</option><option>香港</option><option>钓鱼岛</option></select>
+                 <div>
+                 	<ul class="province" style="display: none;">
+                 		   <li>河北</li><li>山西</li><li>内蒙古</li><li>辽宁</li><li>吉林</li><li>黑龙江</li><li>上海</li><li>江苏</li><li>浙江</li><li>安徽</li><li>福建</li><li>江西</li><li>山东</li><li>河南</li><li>湖北</li><li>湖南</li><li>广东</li><li>广西</li><li>海南</li><li>重庆</li><li>四川</li><li>贵州</li><li>云南</li><li>西藏</li><li>陕西</li><li>甘肃</li><li>青海</li><li>宁夏</li><li>新疆</li><li>台湾</li><li>澳门</li><li>香港</li>
+                 	</ul>
+                 </div>
 
             </div>
             <div class="seek-keywords">
@@ -88,8 +93,10 @@
     </div>
 </body>
 <script src="js/jquery.js"></script>
-<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script src="js/echarts.js"></script>
 <script>
+//console.log(document.getElementsByClassName('optionValues').innerHTML)
+// console.log(document.getElementById('optionValues').innerHTML)
     //路径配置
     require.config({
         paths: {
@@ -152,14 +159,48 @@
                     str += p + ' ';
                 }
             }
+             //var text = $('.options').siblings().addClass('optionValue');
+             //console.log(text)
+            // //console.log(text)
+            // for(var i =0;i<text.length;i++){
+            // 	console.log(text[i].innerText)
+            // 	var html = text[i].innerText = str;
+            // 	//console.log(html)
+            // }   
+            // var x=document.getElementById("optionValue");
+            // var y=x.getElementsByTagName("option");
+            // console.log(y)
             document.getElementById('optionValue').innerHTML = str;
+            // y.innerHTML = str
+            //document.getElementsByClassName('optionValues').innerHTML = str;
             console.log(str)
+            
             
         })
         // 为echarts对象加载数据 
         myChart.setOption(option);
     });
 
+$('.open-ul').click(function(e){
+     $('.province').toggle();
+        e.stopPropagation();
+})
+
+  $(document).click(function(){ 
+   $('.province').hide()
+  }) 
+$('.province > li').click(function(){
+	var text = $(this).text()
+	$('#optionValue').text(text)
+	console.log(text)
+	 $('.province').hide()
+})
+// $(document).click(function(){
+//     $('.province').hide()
+// });
+// $('.province').click(function(){
+//      event.stopPropagation();
+// });
 </script>
 <!-- 代码部分end -->
 
