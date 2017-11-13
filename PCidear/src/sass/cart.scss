@@ -1,18 +1,133 @@
-.cart-box{
+.cart-box {
     margin-top: 20px;
-   .cart-text{
-       text-align: center;
-       p{
-        margin: 47px 0 75px 0;
-        font-size: 24px;
-        color: #595757;
-    }
-    a{
-        color: #00a1b2;
-        font-size: 18px;
-        span{
-            font-size: 14px;
+    .cart-text {
+        text-align: center;
+        p {
+            margin: 47px 0 75px 0;
+            font-size: 24px;
+            color: #595757;
+        }
+        a {
+            color: #00a1b2;
+            font-size: 18px;
+            span {
+                font-size: 14px;
+            }
         }
     }
-   }
+}
+
+.cart-box {
+    .cart-container {
+        width: 680px;
+        height: 120px;
+        margin-top: 20px;
+        background: #fff;
+        border: 1px solid #cccccc;
+        padding: 10px;
+        .goods-text {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+                color: #454545;
+                padding-left: 18px;
+                margin: 10px 0;
+                .date-text {
+                    width: 260px;
+                    text-align: left;
+                }
+                .count-text{
+                    width: 100px;
+                }
+                li {
+                    width: 100px;
+                    text-align: center;
+                }
+            }
+        }
+        .cart-content {
+            /* 订单内容布局 */
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+                .cart-img {
+                    img {
+                        width: 76px;
+                        height: 76px;
+                    }
+                }
+                /* 订单左边商品详细 */
+                .cart-goods {
+                    width: 160px;
+                    display: inline-block;
+                    line-height: 25px !important;
+                    margin: 0 25px 0 10px;
+                    /* 订单左边商品详细布局 */
+                    ul {
+                        color: #454545;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+                }
+                /* 订单价格数量 */
+                .cart-money {
+                    ul {
+                        li {
+                            width: 100px;
+                            height: 76px;
+                            line-height: 76px;
+                            text-align: center;
+                            color: #454545;
+                        }
+                    }
+                    /* 加减数量 */
+                    .goods-count {
+                        width: 100px;
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-content: space-between;
+                            //border: 1px solid #ccc;
+                            li {
+                                width: 25px;
+                                text-align: center;
+                                margin: 0 auto;
+                                input {
+                                    width: 30px !important;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 5px;
+                                    outline: none;
+                                    border: none;
+                                    border: 1px solid #ccc;
+                                    font-size: 17px;
+                                    color: #454545;
+                                }
+                                span {
+                                    font-size: 25px;
+                                    color: #454545;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cart-btn{
+    width: 100px;
+    line-height: 76px;
+    margin-left: 5px;
+    a{
+        width: 70px;
+        font-size: 14px;
+        height: 32px;
+        line-height: 32px;
+    }
 }

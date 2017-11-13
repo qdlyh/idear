@@ -16,7 +16,8 @@
   .site-box .compile-form #form input {
     width: 550px;
     margin-top: 20px;
-    padding: 10px 0; }
+    padding: 10px 0;
+    font-size: 17px; }
   .site-box .compile-form #form .province {
     margin-top: 20px; }
     .site-box .compile-form #form .province select {
@@ -29,7 +30,8 @@
     .site-box .compile-form #form .site-textarea textarea {
       width: 550px;
       height: 150px;
-      margin-top: 20px; }
+      margin-top: 20px;
+      font-size: 17px; }
   .site-box .compile-form #form .right-input {
     margin-right: 15px; }
   .site-box .compile-form .site-btn {
@@ -38,27 +40,33 @@
       width: 360px;
       height: 36px;
       line-height: 36px; }
-  .site-box .my-site .my-site-box {
-    border: 2px solid #9FA0A0;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin-bottom: 10px; }
-    .site-box .my-site .my-site-box .my-site-text-right {
-      padding-right: 30px; }
-    .site-box .my-site .my-site-box .delete-id {
-      display: none; }
-    .site-box .my-site .my-site-box ul .middle {
-      margin: 10px 0;
-      cursor: pointer; }
-    .site-box .my-site .my-site-box ul .blue-color {
-      cursor: pointer;
-      color: #00a1b2; }
-    .site-box .my-site .my-site-box ul .delete-site {
-      cursor: pointer;
-      color: #e64545; }
-    .site-box .my-site .my-site-box ul li {
-      color: #454545; }
+  .site-box .my-site {
+    /* 超出显示滚动条 */
+    width: 700px;
+    height: 470px;
+    overflow: hidden;
+    overflow: auto; }
+    .site-box .my-site .my-site-box {
+      border: 2px solid #9FA0A0;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      margin-bottom: 10px; }
+      .site-box .my-site .my-site-box .my-site-text-right {
+        padding-right: 30px; }
+      .site-box .my-site .my-site-box .delete-id {
+        display: none; }
+      .site-box .my-site .my-site-box ul .middle {
+        margin: 10px 0;
+        cursor: pointer; }
+      .site-box .my-site .my-site-box ul .blue-color {
+        cursor: pointer;
+        color: #00a1b2; }
+      .site-box .my-site .my-site-box ul .delete-site {
+        cursor: pointer;
+        color: #e64545; }
+      .site-box .my-site .my-site-box ul li {
+        color: #454545; }
   .site-box .active {
     position: relative;
     border: 2px solid #00A1B2 !important; }
@@ -80,46 +88,3 @@
       bottom: 0; }
     .site-box .active .active-color {
       color: #454545 !important; }
-
-.site-checkbox {
-  position: relative;
-  display: inline-block;
-  margin: 20px 0 0 80px; }
-  .site-checkbox label {
-    margin-right: 5px; }
-  .site-checkbox span {
-    color: #A8A8A8 !important;
-    font-size: 12px; }
-
-.site-checkbox input[type="checkbox"] {
-  display: none; }
-
-.site-checkbox input[type="checkbox"] + i {
-  position: relative;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border: #b4b4b4 1px solid;
-  border-radius: 5px; }
-  .site-checkbox input[type="checkbox"] + i::after {
-    border: 2px solid transparent;
-    border-left: 0;
-    border-top: 0;
-    content: " ";
-    top: 0px;
-    left: 5px;
-    position: absolute;
-    width: 4px;
-    height: 10px;
-    transform: rotate(45deg) scale(0);
-    transition: transform .2s; }
-
-.site-checkbox input[type="checkbox"]:checked + i {
-  background: #57cd33;
-  border: #fff 1px solid;
-  transition: .2s;
-  -webkit-transition: .2s; }
-  .site-checkbox input[type="checkbox"]:checked + i::after {
-    content: " ";
-    border-color: #fff;
-    transform: rotate(45deg) scale(1); }

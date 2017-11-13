@@ -1,0 +1,74 @@
+@charset "UTF-8";
+.top-img {
+  width: 100%;
+  height: 613px;
+  background: url(../../image/15156165.png) no-repeat; }
+
+.conversion-content {
+  width: 560px;
+  margin: 100px auto;
+  text-align: center;
+  /* 轮播 */ }
+  .conversion-content .left {
+    width: 560px;
+    display: inline-block; }
+    .conversion-content .left ul li {
+      display: inline-block; }
+    .conversion-content .left .bigpic {
+      height: 440px;
+      width: 560px;
+      display: block;
+      margin: 0 auto; }
+    .conversion-content .left .smallpic {
+      margin-top: 40px;
+      height: 80px;
+      text-align: center; }
+    .conversion-content .left .smallpic li {
+      width: 90px;
+      height: 90px;
+      border: 1px solid #989797; }
+    .conversion-content .left .smallpic img {
+      height: 80px;
+      width: 64px;
+      margin-top: 10px;
+      display: inline-block; }
+  .conversion-content .conversion-msg {
+    margin-top: 50px;
+    /* 加减数量 */ }
+    .conversion-content .conversion-msg .msg {
+      width: 560px;
+      height: 40px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc; }
+      .conversion-content .conversion-msg .msg ul {
+        /* 右边信息 */ }
+        .conversion-content .conversion-msg .msg ul li {
+          float: left;
+          line-height: 40px;
+          padding-left: 10px; }
+        .conversion-content .conversion-msg .msg ul .right-msg {
+          float: right; }
+    .conversion-content .conversion-msg .goods-count li {
+      width: 25px; }
+      .conversion-content .conversion-msg .goods-count li input {
+        width: 30px !important;
+        height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        border: 1px solid #ccc;
+        font-size: 17px;
+        color: #454545; }
+      .conversion-content .conversion-msg .goods-count li span {
+        font-size: 25px;
+        color: #454545;
+        cursor: pointer; }
+    .conversion-content .conversion-msg .goods-count .goods-count-text {
+      float: left; }
+  .conversion-content .conversion-btn {
+    margin: 60px 0 100px 0; }
+    .conversion-content .conversion-btn a {
+      width: 560px;
+      height: 40px;
+      font-size: 18px; }

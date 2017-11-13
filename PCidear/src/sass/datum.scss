@@ -2,23 +2,19 @@
     margin-top: 56px;
     color: #595757;
     .phone-box {
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 36px;
-        a{
+        a {
             color: #00a1b2;
             font-size: 14px;
+            float: right;
+            margin-right: 20px;
         }
     }
     #form {
         input {
             width: 620px;
             height: 48px;
-            &::-webkit-input-placeholder {
-                font-size: 14px;
-                color: #bdbcbc;
-                padding-left: 15px;
-            }
+            font-size: 17px;
         }
     }
     .datum-btn {
@@ -27,6 +23,69 @@
             width: 360px;
             height: 36px;
             line-height: 36px;
+        }
+    }
+    .open-div {
+        position: relative;
+        display: none;
+        .shade {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #000;
+            opacity: 0.7;
+        }
+        .open-box {
+            position: fixed;
+            width: 578px;
+            border-radius: 10px;
+            padding: 10px;
+            top: 10%;
+            background: #fff;
+            border: 1px solid #cccccc;
+            text-align: center;
+            color: #676367;
+            .input-right{
+                margin-left: 15px;
+            }
+            /* 验证码Input宽度 */
+            .test-input{
+                width: 190px;
+            }
+            p{
+                margin: 30px 0;
+                font-size: 17px;
+            }
+            input {
+                width: 330px;
+                height: 36px;
+                font-size: 17px;
+                margin-top: 10px;
+            }
+            .open-box-btn1,.open-box-btn2{
+                margin: 40px 0;
+                a{
+                    width: 420px;
+                }
+            }
+        }
+        .close-btn{
+            width: 21px;
+            height: 21px;
+            background: url(../../image/1231234.png) no-repeat; 
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            cursor: pointer;
+        }
+        .test-btn{
+            display: inline-block;
+            margin-left: 10px;
+            a{
+                width: 120px;
+            }
         }
     }
 }

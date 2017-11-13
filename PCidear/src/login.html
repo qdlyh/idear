@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="css/login.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/login.js"></script>
+</head>
+<body>
+	<div class="loginwhole">
+		<div class="shade"><!-- 遮罩层 --></div>
+		<div class="login">
+			<!-- <p class="title">登录</p> -->
+			<p class="title">登录</p>
+			<input type="num" placeholder="手机号码" class="num"  name="tel" maxlength="11">
+			<input type="text" placeholder="密码" class="pas" name="password">
+			<input type="text" placeholder="计算结果" class="count" name="count">
+			<div class="code">
+				<!-- 验证码 -->
+				1+2=?
+			</div>
+			<br>
+			<label><input type="checkbox" class="single"><span class="tip">下次自动登录</span></label>
+			<a href="" class="forget">忘记密码？</a>
+			<button class="btn">立即登录</button>
+			<p class="center">还没有地尔账号？&nbsp;<a href="register.html" class="register">立即注册</a></p>
+		</div>
+	</div>
+</body>
+</html>

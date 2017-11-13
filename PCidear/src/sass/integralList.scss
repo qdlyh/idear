@@ -1,0 +1,59 @@
+.top-img {
+    width: 100%;
+    height: 613px;
+    background: url(../../image/15156165.png) no-repeat;
+}
+
+.case-box {
+    width: 980px;
+    min-width: 980px;
+    margin: 20px auto;
+    margin-bottom: 100px;
+    .case-content {
+        .case-list {
+            width: 760px;    
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        //页面案例展示框样式
+        .list {
+            width: 240px;
+            height: 360px;
+            border: 1px solid #cdcdcd;
+            border-radius: 5px;
+             margin: 10px 0;
+            color: #595757;
+            font-size: 16px;
+             text-align: center;
+            img{
+                width: 240px;
+                height: 153px;
+            }
+        } //案例展示框中间部分外边距
+        .list-active {
+            margin: 10px;
+        } //案例展示框p标签公共样式
+        p {
+            padding: 10px 0 0 10px;
+        }
+        .list-text {
+            color: #9fa0a0;
+            font-size: 16px;
+            margin:10px 0 10px 0;
+        } 
+        .integral{
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            .integral-count{
+                margin-left: 15px;
+                color: #00a1b2;
+            }
+            span{
+                margin-right: 15px;
+            }
+        }
+    }
+}

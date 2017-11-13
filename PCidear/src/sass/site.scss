@@ -19,6 +19,7 @@
                 width: 550px; // height: 48px;
                 margin-top: 20px;
                 padding: 10px 0;
+                font-size: 17px;
             }
             .province{
                 margin-top: 20px;
@@ -35,6 +36,7 @@
                     width: 550px;
                     height: 150px;
                     margin-top: 20px;
+                    font-size: 17px;
                 }
             } //让个别input右对齐
             .right-input {
@@ -42,11 +44,8 @@
             }
         }
         .site-btn {
-            margin-top: 80px; //position: relative;
+            margin-top: 80px;
             a {
-                // position: absolute;
-                // top: 80px;
-                // left: 150px;
                 width: 360px;
                 height: 36px;
                 line-height: 36px;
@@ -55,6 +54,11 @@
     }
     /* 保存后收货地址样式 */
     .my-site {
+        /* 超出显示滚动条 */
+        width: 700px;
+        height: 470px;
+        overflow: hidden;
+        overflow: auto;
         .my-site-box {
             border: 2px solid #9FA0A0;
             display: flex;
@@ -86,81 +90,4 @@
             }
         }
     }
-    /* 选中后的勾 */
-    .active{
-        position: relative;
-        border: 2px solid #00A1B2 !important;
-        &::before {
-            content: "";
-            width: 0;
-            height: 0;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            border-bottom: 40px solid #00A1B2;
-            border-left: 40px solid transparent;
-        }
-        &::after{
-            content: "\2713";
-            font-size: 20px;
-            color: #fff;
-            position: absolute;
-            right: 5px;
-            bottom: 0;
-        }
-        .active-color{
-            color: #454545 !important;
-        }
-    }
-}
 
-.site-checkbox {
-    position: relative;
-    display: inline-block;
-    margin: 20px 0 0 80px;
-    label {
-        margin-right: 5px;
-    }
-    span {
-        color: #A8A8A8 !important;
-        font-size: 12px;
-    }
-}
-
-.site-checkbox input[type="checkbox"] {
-    display: none;
-}
-
-.site-checkbox input[type="checkbox"]+i {
-    position: relative;
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: #b4b4b4 1px solid;
-    border-radius: 5px;
-    &::after {
-        border: 2px solid transparent;
-        border-left: 0;
-        border-top: 0;
-        content: " ";
-        top: 0px;
-        left: 5px;
-        position: absolute;
-        width: 4px;
-        height: 10px;
-        transform: rotate(45deg) scale(0);
-        transition: transform .2s;
-    }
-}
-
-.site-checkbox input[type="checkbox"]:checked+i {
-    background: #57cd33;
-    border: #fff 1px solid;
-    transition: .2s;
-    -webkit-transition: .2s;
-    &::after {
-        content: " ";
-        border-color: #fff;
-        transform: rotate(45deg) scale(1);
-    }
-}

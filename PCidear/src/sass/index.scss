@@ -1,14 +1,13 @@
 .swiper-container {
-    height: 667px;
+    height: 100%;
+    width: 100%;
     min-width: 980px;
     .swiper-slide {
         background-size: cover;
         overflow: hidden;
         background-position: center;
-        height: 667px;
-        min-width: 980px;
         img {
-            height: 667px;
+            height: 100%;
             width: 100%;
         }
     } //分页器
@@ -17,15 +16,21 @@
     } //分页器选中
     .swiper-pagination-bullet-active {
         width: 48px;
-        height: 2px;
+        height: 3px;
         background: #1399a8 !important;
     } //分页器没选
     .swiper-pagination-bullet {
         width: 48px;
-        height: 2px;
+        height: 3px;
         border-radius: 0%;
         opacity: 10;
         background: #fff;
+    }
+    .swiper-button-prev{
+        left: 40px;
+    }
+    .swiper-button-next{
+        right: 40px;
     }
 }
 
@@ -36,7 +41,6 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    background: #ddd;
     .list-box {
         width: 233px;
         height: 360px;

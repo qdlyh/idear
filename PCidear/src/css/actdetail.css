@@ -1,0 +1,11 @@
+*{font-family: '微软雅黑';}
+.content{width: 780px;margin: 0 auto;padding-top: 20px;padding-left: 100px;padding-right: 100px;}
+.tip{font-family: '微软雅黑';display: inline-block;padding: 5px 0px;margin-top: 20px;color: #676767;} 
+.mid{text-align: center;margin-top: 40px;font-size: 16px;color: #484F4F;}
+.time{margin-top: 10px;text-align: center;color: #484F4F;}
+.detail{margin-top: 20px;color: #484F4F;font-size: 15px;line-height: 20px;}
+.footer a{display: inline-block;text-decoration: none;color: #484F4F;margin-top: 50px;}
+.last{float: left;}
+.next{float: right;}
+.link{clear:both;margin-top: 350px;}
+.title{display: block;text-align: center;border-bottom: 1px solid #676767;padding-bottom: 5px;}

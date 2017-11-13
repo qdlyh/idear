@@ -1,0 +1,9 @@
+*{font-family: '微软雅黑';}
+.banner{display: block;margin: 0 auto;}
+.shoplist img{width: 240px;height: 156px;}
+/*.include{width: 100%;background: #DDDDDD}*/
+.content{width: 780px;margin: 0 auto;padding-top: 20px;padding-left: 100px;padding-right: 100px;}
+.shop{width: 240px;height: 320px;display: inline-block;color: #8E9393;border: 1px solid #868585;
+	margin: 20px 6px;text-decoration: none;margin-bottom: 50px;user-select: nones;}
+.firname{text-align: center;font-style: 18px;margin-top: 25px;}
+.secname{text-align: center;font-size: 16px;margin-top: 10px;color: #595757}

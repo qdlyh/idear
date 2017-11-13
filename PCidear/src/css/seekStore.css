@@ -1,0 +1,124 @@
+@charset "UTF-8";
+.top-img img {
+  width: 100%; }
+
+.map-content {
+  width: 960px;
+  text-align: center;
+  margin: 0 auto; }
+  .map-content p {
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 3px;
+    color: #00A1B2;
+    border-bottom: 1px solid #00A1B2;
+    width: 50px; }
+  .map-content h4 {
+    margin: 70px 0 10px 0;
+    color: #00A1B2; }
+  .map-content .map-box {
+    height: 615px;
+    width: 960px;
+    border: 1px solid #CACACA;
+    position: relative;
+    /* 高德 */
+    /* echarts */ }
+    .map-content .map-box #container {
+      height: 615px;
+      position: absolute;
+      display: none; }
+    .map-content .map-box #myPageTop {
+      cursor: pointer;
+      color: #464646;
+      position: absolute;
+      z-index: 999; }
+    .map-content .map-box #mapbox {
+      height: 615px; }
+
+.seek-idear {
+  width: 980px;
+  margin: 20px auto; }
+  .seek-idear hr {
+    margin: 10px 0; }
+  .seek-idear .seek-city {
+    width: 340px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+    position: relative; }
+    .seek-idear .seek-city p {
+      margin-bottom: 5px; }
+    .seek-idear .seek-city .open-ul {
+      display: inline-block;
+      width: 329px;
+      height: 30px;
+      border: 1px solid #cccccc;
+      line-height: 30px;
+      padding-left: 10px;
+      cursor: pointer; }
+    .seek-idear .seek-city .open-ul-btn {
+      width: 36px;
+      height: 30px;
+      display: inline-block;
+      background: url(../../image/54841416.png) no-repeat;
+      position: absolute;
+      right: 0px;
+      top: 27px;
+      cursor: pointer; }
+    .seek-idear .seek-city .province {
+      display: none;
+      height: 240px;
+      overflow: hidden;
+      overflow: auto;
+      border: 1px solid #cccccc; }
+      .seek-idear .seek-city .province li {
+        height: 32px;
+        line-height: 32px;
+        padding-left: 10px;
+        color: #c9c9c9;
+        cursor: pointer; }
+  .seek-idear .seek-keywords {
+    width: 610px;
+    float: right;
+    position: relative; }
+    .seek-idear .seek-keywords p {
+      margin-bottom: 5px; }
+    .seek-idear .seek-keywords input {
+      width: 610px;
+      border: 1px solid #cccccc;
+      outline: none;
+      height: 32px; }
+    .seek-idear .seek-keywords .seek-btn {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      cursor: pointer;
+      background: url(../../image/515151.png) no-repeat;
+      top: 35px;
+      right: 10px; }
+    .seek-idear .seek-keywords .keywords-box {
+      width: 610px;
+      margin-top: 10px;
+      height: 248px;
+      overflow: hidden;
+      overflow: auto; }
+      .seek-idear .seek-keywords .keywords-box .keywords-text {
+        width: 100%;
+        height: 32px;
+        background: #DDDDDD; }
+        .seek-idear .seek-keywords .keywords-box .keywords-text p {
+          font-size: 14px;
+          line-height: 32px;
+          padding-left: 10px; }
+      .seek-idear .seek-keywords .keywords-box .keywords-content {
+        padding: 10px;
+        border: 1px solid #cccccc; }
+        .seek-idear .seek-keywords .keywords-box .keywords-content .keywords-content-box p {
+          font-size: 14px;
+          color: #595757; }
+        .seek-idear .seek-keywords .keywords-box .keywords-content .keywords-content-box .keywords-map {
+          font-size: 18px;
+          color: #595757; }
+          .seek-idear .seek-keywords .keywords-box .keywords-content .keywords-content-box .keywords-map img {
+            vertical-align: middle; }

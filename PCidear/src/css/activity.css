@@ -1,0 +1,16 @@
+*{margin:0;padding:0;}
+.main{width: 100%;font-family: "Microsoft YaHei";}
+.nav{width: 930px;margin: 0 auto;height: 52px;background: #DDDDDD
+;padding-left: 10px;padding-right: 40px;line-height: 52px;position: relative;}
+.nav img{display: inline-block;line-height: 52px;}
+.firstimg{height: 31px;vertical-align: middle;}
+.secondimg{position: relative;left: 720px;height: 28px;vertical-align: middle;}
+.banner{display: block;margin: 0 auto;}
+.content{width: 780px;margin: 0 auto;padding-top: 20px;padding-left: 100px;padding-right: 100px;}
+.tip{padding-top: 5px;padding-bottom: 5px;background: #E6E6E6;display: inline-block;width: 390px;user-select: none;cursor: pointer;;text-align: center;margin-top: 20px;margin-bottom: 20px;font-family: 'Microsoft YaHei';font-size: 16px;}
+.row{font-family: 'Microsoft YaHei';font-size: 16px;position: relative;}
+.title{position: absolute;left: 0;display: inline-block;}
+.time{position: absolute;right: 0;display: inline-block;font-size: 14px;}
+.content a{color:black;display: block;padding: 10px 0;border-bottom: 1px solid #9fa0a0;margin-bottom: 16px;cursor: pointer;user-select:none;}
+.page{margin-top: 80px;position: relative;}
+.link{margin-top: 200px;}

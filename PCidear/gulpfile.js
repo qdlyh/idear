@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 
 gulp.task('images', function () {
-    gulp.src('src/img/*.*')
+    gulp.src('src/image/*.*')
         .pipe(imagemin())
         .pipe(gulp.dest('src/images/'))
 })
