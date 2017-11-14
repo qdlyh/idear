@@ -60,6 +60,7 @@
             <div class="nav-right">
                 <ul>
                     <li><a href="index.html"><img src="image/15615611.png" alt=""></a></li>
+                    <li><a href="myDatum.html"><img src="image/12312312.png" alt=""></a></li>
                     <li><a href="myCart.html"><img src="image/165162313.png" alt=""></a></li>
                     <li class="nav-open-ul">
                         <a href="javascript:;"><img src="image/596296418.png" alt=""></a>
@@ -121,11 +122,12 @@
                         <div class="cart-container">
                             <div class="goods-text">
                                 <ul>
+                                    <li class="check-li"><input type="checkbox" class="check"></li>
                                     <li class="date-text">2017-11-02</li>
                                     <li>单价</li>
                                     <li class="count-text">数量</li>
                                     <li>金额</li>
-                                    <li class="delete-goods">删除</li>
+                                    <li>操作</li>
                                 </ul>
                             </div>
                             <div class="cart-content">
@@ -133,14 +135,14 @@
                                     <li class="cart-img"><img src="image/211156165.png" alt=""></li>
                                     <li class="cart-goods">
                                         <ul>
-                                            <li>水疗马桶</li>
+                                            <li>水疗马桶1</li>
                                             <li>颜色：黄色</li>
                                             <li>规格：大型</li>
                                         </ul>
                                     </li>
                                     <li class="cart-money">
                                         <ul>
-                                            <li><i>￥</i><span class="money-text">2010</span></li>
+                                            <li>￥<i class="price">100</i></li>
                                             <li class="goods-count">
                                                 <ul>
                                                     <li><span class="subtract-btn">-</span></li>
@@ -148,12 +150,12 @@
                                                     <li><span class="add-btn">+</span></li>
                                                 </ul>
                                             </li>
-                                            <li>￥2561</li>
+                                            <li>￥<i class="sum-money">100</i></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <div class="btn-blue cart-btn">
-                                            <a href="javascript:;">结算</a>
+                                        <div class="btn-blue cart-btn delete-goods">
+                                            <a href="javascript:;">删除</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -163,11 +165,12 @@
                         <div class="cart-container">
                             <div class="goods-text">
                                 <ul>
+                                    <li class="check-li"><input type="checkbox" class="check"></li>
                                     <li class="date-text">2017-11-02</li>
                                     <li>单价</li>
                                     <li class="count-text">数量</li>
                                     <li>金额</li>
-                                    <li class="delete-goods">删除</li>
+                                    <li>操作</li>
                                 </ul>
                             </div>
                             <div class="cart-content">
@@ -175,14 +178,14 @@
                                     <li class="cart-img"><img src="image/211156165.png" alt=""></li>
                                     <li class="cart-goods">
                                         <ul>
-                                            <li>水疗马桶</li>
+                                            <li>水疗马桶2</li>
                                             <li>颜色：黄色</li>
                                             <li>规格：大型</li>
                                         </ul>
                                     </li>
                                     <li class="cart-money">
                                         <ul>
-                                             <li><i>￥</i><span class="money-text">2010</span></li>
+                                            <li>￥<i class="price">200</i></li>
                                             <li class="goods-count">
                                                 <ul>
                                                     <li><span class="subtract-btn">-</span></li>
@@ -190,12 +193,12 @@
                                                     <li><span class="add-btn">+</span></li>
                                                 </ul>
                                             </li>
-                                            <li>￥2562</li>
+                                            <li>￥<i class="sum-money">200</i></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <div class="btn-blue cart-btn">
-                                            <a href="javascript:;">结算</a>
+                                        <div class="btn-blue cart-btn delete-goods">
+                                            <a href="javascript:;">删除</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -205,11 +208,12 @@
                         <div class="cart-container">
                             <div class="goods-text">
                                 <ul>
+                                    <li class="check-li"><input type="checkbox" class="check"></li>
                                     <li class="date-text">2017-11-02</li>
                                     <li>单价</li>
                                     <li class="count-text">数量</li>
                                     <li>金额</li>
-                                    <li class="delete-goods">删除</li>
+                                    <li>操作</li>
                                 </ul>
                             </div>
                             <div class="cart-content">
@@ -224,7 +228,7 @@
                                     </li>
                                     <li class="cart-money">
                                         <ul>
-                                             <li><i>￥</i><span class="money-text">2010</span></li>
+                                            <li>￥<i class="price">300</i></li>
                                             <li class="goods-count">
                                                 <ul>
                                                     <li><span class="subtract-btn">-</span></li>
@@ -232,19 +236,32 @@
                                                     <li><span class="add-btn">+</span></li>
                                                 </ul>
                                             </li>
-                                            <li>￥2563</li>
+                                            <li>￥<i class="sum-money">300</i></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <div class="btn-blue cart-btn">
-                                            <a href="javascript:;">结算</a>
+                                        <div class="btn-blue cart-btn delete-goods">
+                                            <a href="javascript:;">删除</a>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <p><span>数量</span><span id="count"></span></p>
-                        <p><span>总价</span><span id="total"></span></p>
+                        <div class="total-box">
+                            <span class="goods-check">
+                                <label for="all">
+                                   <input type="checkbox" id="all" class="all-checked">
+                                    全选
+                              </label>       
+                            </span>
+                            <div class="total-content">
+                                <span style="margin-top:3px;">商品数量&nbsp;<i id="count">0</i>&nbsp;件</span>
+                                <span class="total-text">合计&nbsp;<i>￥</i><i id="total">0.00</i></span>
+                                <div class="btn-blue total-btn">
+                                    <a href="javascript:;">结算</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="page">
                             <div id="box" class="box">
                                 <!-- 分页 -->
