@@ -2,12 +2,29 @@ if ($('.cart-container').length === 0) {
     //console.log($('.cart-container').length)
     $('.cart-container').hide();
     $('.page').hide();
+    $('.total-box').hide();
     $('.cart-text').show();
 } else {
     $('.cart-container').show();
     $('.page').show();
+    $('.total-box').show();
     $('.cart-text').hide();
 }
+
+/* 判断初始化数量是否为1 */
+$('.goods-input').each(function () {
+    if ($(this).val() !== 1) {
+        //$(this).val($(this).val().replace(/\D|^0/g, '1'));
+        // var inputVal = $(this).parents('.goods-count').find('.goods-input'); //input
+        var goodsMoney = $(this).parents('.cart-money').find('.price'); //单价
+        var sumMoney = $(this).parents('.cart-money').find('.sum-money'); //金额
+        var goodsCount = $(this).val(parseInt($(this).val())).val(); //input数量
+        var allMoney = goodsCount * parseInt(goodsMoney.text())
+        sumMoney.text(allMoney)
+        setTotal();
+    }
+})
+
 /* 全选 */
 $('.all-checked').click(function () {
     if ($(this).is(':checked')) {
@@ -65,7 +82,7 @@ $('.add-btn').click(function () {
 })
 /* 输入数量 */
 $('.goods-input').keyup(function () {
-    if ($(this).val() === '') {
+    if ($(this).val() === '' || $(this).val() > 999999999) {
         $(this).val(1)
     }
     $(this).val($(this).val().replace(/\D|^0/g, '1'));
@@ -90,21 +107,25 @@ $('.delete-goods').click(function () {
     $(this).parents('.cart-container').remove();
     setTotal();
 })
-
+/* 合计 */
 function setTotal() {
     var totalMoney = 0;
     var totalCount = 0;
-    //var TotalMoney = 0;
     $('.check').each(function () {
         if ($(this).is(':checked')) {
-            var goodsMoney = parseInt($(this).parents('.cart-container').find('.sum-money').text());
-            var goodsCount = parseInt($(this).parents('.cart-container').find('.goods-input').val());
+            var goodsMoney = parseInt($(this).parents('.cart-container').find('.sum-money').text()); //金额
+            var goodsCount = parseInt($(this).parents('.cart-container').find('.goods-input').val()); //数量
             totalMoney += goodsMoney;
             totalCount += goodsCount;
-            //console.log(TotalMoney)
         }
     });
     $("#total").html(totalMoney.toFixed(2));
     $("#count").html(totalCount);
+    if (totalMoney !== 0 || totalCount !== 0) {
+        $('.total-content').find('.total-btn-true').show()
+        $('.total-content').find('.total-btn-false').hide()
+    } else {
+        $('.total-content').find('.total-btn-true').hide()
+        $('.total-content').find('.total-btn-false').show()
+    }
 }
-// setTotal();
