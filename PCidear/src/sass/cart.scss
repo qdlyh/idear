@@ -33,11 +33,15 @@
                 color: #454545;
                 padding-left: 18px;
                 margin: 10px 0;
+                .check-li {
+                    margin-right: 30px;
+                    width: 0px;
+                }
                 .date-text {
-                    width: 260px;
+                    width: 230px;
                     text-align: left;
                 }
-                .count-text{
+                .count-text {
                     width: 100px;
                 }
                 li {
@@ -70,6 +74,11 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+                        li {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
                     }
                 }
                 /* 订单价格数量 */
@@ -89,8 +98,7 @@
                         ul {
                             display: flex;
                             flex-wrap: wrap;
-                            align-content: space-between;
-                            //border: 1px solid #ccc;
+                            align-content: space-between; //border: 1px solid #ccc;
                             li {
                                 width: 25px;
                                 text-align: center;
@@ -120,14 +128,62 @@
     }
 }
 
-.cart-btn{
+.total-box {
+    width: 100%;
+    background: #E5E5E5;
+    .goods-check {
+        float: left;
+        line-height: 50px;
+        margin: 3px 0 0 30px;
+    }
+    .total-content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .total-text {
+            margin: 0 30px;
+        }
+        i {
+            color: #f40;
+            font-weight: 700;
+            font-size: 18px;
+            font-family: tohoma, arial;
+        }
+        .total-btn-false {
+            a {
+                width: 100px;
+                font-size: 16px;
+                height: 50px;
+                line-height: 50px;
+                background: #B0B0B0;
+            }
+        }
+        .total-btn-true {
+            a {
+                width: 100px;
+                font-size: 16px;
+                height: 50px;
+                line-height: 50px;
+                background: #FF4400;
+            }
+        }
+    }
+}
+
+.delete-goods {
     width: 100px;
     line-height: 76px;
+    text-align: center;
     margin-left: 5px;
-    a{
+    a {
         width: 70px;
         font-size: 14px;
         height: 32px;
         line-height: 32px;
+        color: #464646;
+        &:hover {
+            color: #fd0000;
+            border-bottom: 1px solid #fd0000;
+        }
     }
 }
