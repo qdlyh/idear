@@ -27,8 +27,11 @@
     color: #454545;
     padding-left: 18px;
     margin: 10px 0; }
+    .cart-box .cart-container .goods-text ul .check-li {
+      margin-right: 30px;
+      width: 0px; }
     .cart-box .cart-container .goods-text ul .date-text {
-      width: 260px;
+      width: 230px;
       text-align: left; }
     .cart-box .cart-container .goods-text ul .count-text {
       width: 100px; }
@@ -57,6 +60,10 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between; }
+          .cart-box .cart-container .cart-content ul .cart-goods ul li {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
       .cart-box .cart-container .cart-content ul .cart-money {
         /* 加减数量 */ }
         .cart-box .cart-container .cart-content ul .cart-money ul li {
@@ -90,12 +97,48 @@
                 color: #454545;
                 cursor: pointer; }
 
-.cart-btn {
+.total-box {
+  width: 100%;
+  background: #E5E5E5; }
+  .total-box .goods-check {
+    float: left;
+    line-height: 50px;
+    margin: 3px 0 0 30px; }
+  .total-box .total-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .total-box .total-content .total-text {
+      margin: 0 30px; }
+    .total-box .total-content i {
+      color: #f40;
+      font-weight: 700;
+      font-size: 18px;
+      font-family: tohoma, arial; }
+    .total-box .total-content .total-btn-false a {
+      width: 100px;
+      font-size: 16px;
+      height: 50px;
+      line-height: 50px;
+      background: #B0B0B0; }
+    .total-box .total-content .total-btn-true a {
+      width: 100px;
+      font-size: 16px;
+      height: 50px;
+      line-height: 50px;
+      background: #FF4400; }
+
+.delete-goods {
   width: 100px;
   line-height: 76px;
+  text-align: center;
   margin-left: 5px; }
-  .cart-btn a {
+  .delete-goods a {
     width: 70px;
     font-size: 14px;
     height: 32px;
-    line-height: 32px; }
+    line-height: 32px;
+    color: #464646; }
+    .delete-goods a:hover {
+      color: #fd0000;
+      border-bottom: 1px solid #fd0000; }
