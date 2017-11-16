@@ -103,7 +103,9 @@
   .total-box .goods-check {
     float: left;
     line-height: 50px;
-    margin: 3px 0 0 30px; }
+    margin: 4px 0 0 30px; }
+    .total-box .goods-check .goods-check-text {
+      vertical-align: 10%; }
   .total-box .total-content {
     display: flex;
     justify-content: flex-end;
@@ -111,10 +113,10 @@
     .total-box .total-content .total-text {
       margin: 0 30px; }
     .total-box .total-content i {
-      color: #f40;
+      color: #FF4400;
       font-weight: 700;
       font-size: 18px;
-      font-family: tohoma, arial; }
+      font-family: arial; }
     .total-box .total-content .total-btn-false a {
       width: 100px;
       font-size: 16px;
@@ -142,3 +144,36 @@
     .delete-goods a:hover {
       color: #fd0000;
       border-bottom: 1px solid #fd0000; }
+
+.goods-checkbox input[type="checkbox"] {
+  display: none; }
+
+.goods-checkbox input[type="checkbox"] + i {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: #b4b4b4 1px solid; }
+  .goods-checkbox input[type="checkbox"] + i::after {
+    border: 2px solid transparent;
+    border-left: 0;
+    border-top: 0;
+    content: " ";
+    bottom: 3px;
+    left: 6px;
+    position: absolute;
+    width: 6px;
+    height: 17px;
+    transform: rotate(45deg) scale(0);
+    transition: transform .2s; }
+
+.goods-checkbox input[type="checkbox"]:checked + i {
+  background: #00A1B2;
+  transition: .2s;
+  -webkit-transition: .2s;
+  border: transparent 1px solid; }
+  .goods-checkbox input[type="checkbox"]:checked + i::after {
+    content: " ";
+    border-color: #fff;
+    transform: rotate(45deg) scale(1); }
