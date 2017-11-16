@@ -16,9 +16,6 @@
     <link rel="stylesheet" href="css/shopping.css">
     <link rel="stylesheet" href="css/cart.css">
     <title>我的购物车</title>
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -122,7 +119,12 @@
                         <div class="cart-container">
                             <div class="goods-text">
                                 <ul>
-                                    <li class="check-li"><input type="checkbox" class="check"></li>
+                                    <li class="check-li goods-checkbox">
+                                        <label>
+                                            <input type="checkbox" class="check">
+                                            <i></i>
+                                        </label>
+                                    </li>
                                     <li class="date-text">2017-11-02</li>
                                     <li>单价</li>
                                     <li class="count-text">数量</li>
@@ -165,7 +167,12 @@
                         <div class="cart-container">
                             <div class="goods-text">
                                 <ul>
-                                    <li class="check-li"><input type="checkbox" class="check"></li>
+                                    <li class="check-li goods-checkbox">
+                                        <label>
+                                            <input type="checkbox" class="check">
+                                            <i></i>
+                                        </label>
+                                    </li>
                                     <li class="date-text">2017-11-02</li>
                                     <li>单价</li>
                                     <li class="count-text">数量</li>
@@ -208,7 +215,12 @@
                         <div class="cart-container">
                             <div class="goods-text">
                                 <ul>
-                                    <li class="check-li"><input type="checkbox" class="check"></li>
+                                    <li class="check-li goods-checkbox">
+                                        <label>
+                                            <input type="checkbox" class="check">
+                                            <i></i>
+                                        </label>
+                                    </li>
                                     <li class="date-text">2017-11-02</li>
                                     <li>单价</li>
                                     <li class="count-text">数量</li>
@@ -248,11 +260,12 @@
                             </div>
                         </div>
                         <div class="total-box">
-                            <span class="goods-check">
+                            <span class="goods-check goods-checkbox">
                                 <label for="all">
                                    <input type="checkbox" id="all" class="all-checked">
-                                    全选
-                              </label>       
+                                   <i></i>
+                                    <span class="goods-check-text">全选</span>
+                                </label>
                             </span>
                             <div class="total-content">
                                 <span style="margin-top:3px;">商品数量&nbsp;<i id="count">0</i>&nbsp;件</span>
