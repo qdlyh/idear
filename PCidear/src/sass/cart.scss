@@ -134,7 +134,10 @@
     .goods-check {
         float: left;
         line-height: 50px;
-        margin: 3px 0 0 30px;
+        margin: 4px 0 0 30px;
+        .goods-check-text{
+            vertical-align: 10%;
+        }
     }
     .total-content {
         display: flex;
@@ -144,10 +147,10 @@
             margin: 0 30px;
         }
         i {
-            color: #f40;
+            color: #FF4400;
             font-weight: 700;
             font-size: 18px;
-            font-family: tohoma, arial;
+            font-family: arial;
         }
         .total-btn-false {
             a {
@@ -185,5 +188,43 @@
             color: #fd0000;
             border-bottom: 1px solid #fd0000;
         }
+    }
+}
+
+.goods-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.goods-checkbox input[type="checkbox"]+i {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: #b4b4b4 1px solid;
+    &::after {
+        border: 2px solid transparent;
+        border-left: 0;
+        border-top: 0;
+        content: " ";
+        bottom: 3px;
+        left: 6px;
+        position: absolute;
+        width: 6px;
+        height: 17px;
+        transform: rotate(45deg) scale(0);
+        transition: transform .2s;
+    }
+}
+
+.goods-checkbox input[type="checkbox"]:checked+i {
+    background: #00A1B2;
+    transition: .2s;
+    -webkit-transition: .2s;
+    border: transparent 1px solid;
+    &::after {
+        content: " ";
+        border-color: #fff;
+        transform: rotate(45deg) scale(1);
     }
 }
