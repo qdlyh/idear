@@ -44,9 +44,9 @@ require(['echarts', 'echarts/chart/map'], function (ch) {
             },
 
             data: [{
-                name: '广东',
-                selected: false
-            } //初始选择
+                    name: '广东',
+                    selected: false
+                } //初始选择
             ]
         }]
     };
@@ -56,7 +56,7 @@ require(['echarts', 'echarts/chart/map'], function (ch) {
         var str = '';
         for (var p in selected) {
             if (selected[p]) {
-                str += p + ' ';
+                str += p + '';
             }
         }
         document.getElementById('ul-text').innerHTML = str;
@@ -65,10 +65,10 @@ require(['echarts', 'echarts/chart/map'], function (ch) {
         $('html,body').stop().animate({
             scrollTop: top + "px"
         }, 800);
-        if (str == '') {
+        if (str === '') {
             document.getElementById('ul-text').innerHTML = '--请选择省份--'
         }
-        $(".keywords-name").parents('.keywords-content-box').hide().filter(":contains(" + $('#seek-input').val().trim() + ")").show();
+        seek();
     })
     // 为echarts对象加载数据 
     myChart.setOption(option);
@@ -87,14 +87,17 @@ $('.province > li').click(function () {
     $('#seek-input').val(text)
     console.log(text)
     $('.province').hide()
-    if ($(this).val() == '') {
-        $('.keywords-content').show()
-    }
-    $(".keywords-name").parents('.keywords-content-box').hide().filter(":contains(" + $('#seek-input').val().trim() + ")").show();
+    seek();
 })
 $('#seek-input').keyup(function () {
-    if ($(this).val() == '') {
+    seek();
+})
+
+function seek() {
+    var content = $(".keywords-name").parents('.keywords-content-box');
+    var inputVal = $('#seek-input').val();
+    if ($('#seek-input').val() === '') {
         $('.keywords-content').show()
     }
-    $(".keywords-name").parents('.keywords-content-box').hide().filter(":contains(" + $('#seek-input').val().trim() + ")").show();
-})
+    content.hide().filter(":contains(" + inputVal + ")").show();
+}
